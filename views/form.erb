@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BBQ予約受付フォーム</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+
+    <form action="/form" method="post">
+      <table border="0">
+        <tr>
+          <td align="right"><b> お名前：</b></td>
+          <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td align="right"><b> 予約希望日：</b></td>
+          <td><input type="date" name="date"></td>
+        </tr>
+        <tr>
+          <td align="right"><b>希望プラン：</b></td>
+          <td>
+            <input type="radio" name="plan" value="アラハセット">アラハセット
+            <input type="radio" name="plan" value="ゴールドセット">ゴールドセット
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="送信">
+            <input type="reset" value="リセット">
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <footer><a href="/">戻る</a></footer>
+
+  </body>
+</html>

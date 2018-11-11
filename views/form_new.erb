@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <p>以下の内容で予約を受付致しました。</p>
+
+      <table border="0">
+        <tr>
+          <td align="right"><b> お名前：</b></td>
+          <td><%= @name %></td>
+        </tr>
+        <tr>
+          <td align="right"><b> 予約希望日：</b></td>
+          <td><%= @date %></td>
+        </tr>
+        <tr>
+          <td align="right"><b> 希望プラン：</b></td>
+          <td><%= @plan %></td>
+        </tr>
+
+
+
+      <footer>
+        <p>入力ミスったという人は<a href="/form">こちら</a></p>
+      </footer>
+
+
+  </body>
+</html>
